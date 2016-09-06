@@ -10,3 +10,7 @@ from the original; and in some cases hilariously different.
 
 The live demo of this can be found [here](https://lost-in-translation.now.sh/). Deployed
 with [now](https://now.sh).
+
+Here is an example run:
+
+![Lost in Translation](https://raw.githubusercontent.com/adtac/lost-in-translation/master/example.png)
