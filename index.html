@@ -1,0 +1,55 @@
+<html>
+    <title>Lost in Translation</title>
+
+    <link rel="stylesheet" href="assets/material.min.css">
+    <script src="assets/material.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    <script type='text/javascript' src='assets/whispers.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <style>
+        * {
+            font-family: 'Open Sans';
+        }
+    </style>
+
+    <div style="position: absolute; left: 24px; top: 60px; font-family: 'Open Sans'; font-weight: 100px; font-size: 32px;">
+        Lost in Translation
+    </div>
+    <div class="mdl-textfield mdl-js-textfield" style="position: absolute; width: 100%; top: 0px; display: flex; align-items: center; justify-content: center;">
+        <table borders="no" style="width: 60%; border-collapse:separate; border-spacing:25px;">
+            <tr>
+                <td colspan="2">
+                    <div class="mdl-card mdl-shadow--3dp" style="width: 100%; min-height: 0px; background: #442197;">
+                        <div class="mdl-card__supporting-text" style="width: 100%">
+                            <div style="display: flex; align-items: center; justify-content: center; color: #fff;">
+                                Enter any sentence in English and press the return key.
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="font-face: 'Open Sans'">
+                    <div id="message" style="display: flex; align-items: center; justify-content: center;">Number of translations: 10</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input size="75" type="text" id="input" name="input" class="mdl-textfield__input" placeholder="I'm gonna make him an offer he can't refuse." autofocus style="margin-top: -22px">
+                </td>
+                <td>
+                    <input class="mdl-slider mdl-js-slider" type="range" oninput="showMessage(this.value)" onchange="showMessage(this.value)" min="1" max="25" value="10" id="trans">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul id="tlist" class="mdl-list">
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</html>
